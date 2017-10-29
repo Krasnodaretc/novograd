@@ -1,0 +1,37 @@
+@import "const";
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: 100;
+
+  &__arrow{
+    width: 47px;
+    height: 47px;
+    margin-right: 13px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.2s ease-in;
+    &--bottom{
+      background-image: url("../img/action/bottom.png");
+    }
+    &--right{
+      background-image: url("../img/action/right.png");
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    .btn__arrow{
+      background-color: $btn-blue;
+    }
+  }
+}
