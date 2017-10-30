@@ -4,7 +4,7 @@
   height: 120px;
   background-color: $gray;
 
-  &__container{
+  & &__container{
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -111,5 +111,39 @@
       height:100%;
       border-radius: 50%;
     }
+  }
+}
+
+
+@media all and (max-width: 1360px) {
+  .menu{
+    &__links{
+      padding: 9px 5px;
+      font-size: 16px;
+      margin: 5px 2px;
+    }
+  }
+  .contact{
+    &__text{
+      font-size: 17px;
+      border-radius: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      &:after{
+        display: none;
+      }
+    }
+    &__number{
+      font-size: 18px;
+    }
+    &__phone{
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 1110px) {
+  .contact{
+    display: none;
   }
 }

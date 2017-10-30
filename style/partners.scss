@@ -1,0 +1,19 @@
+.partners{
+  padding-bottom: 70px;
+  &__tittle{
+    margin-top: 45px;
+    margin-bottom: 60px;
+  }
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 763px;
+  }
+  &__img{
+    height: 120px;
+    display: flex;
+    align-items: center;
+  }
+}

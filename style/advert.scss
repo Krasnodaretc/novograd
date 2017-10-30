@@ -1,0 +1,15 @@
+@import "const";
+.advert{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  &__img{
+    margin-right: 30px;
+    margin-bottom: 12px;
+  }
+  & &__text{
+    color: $btn-blue;
+    margin: 0px;
+  }
+}

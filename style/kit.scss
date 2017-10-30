@@ -3,7 +3,14 @@ html, body{
   margin: 0px;
   padding: 0px;
 }
-
+.main{
+  background-color: $gray;
+}
+.container{
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
 .btn{
   display: flex;
   align-items: center;
@@ -34,4 +41,32 @@ html, body{
       background-color: $btn-blue;
     }
   }
+}
+
+
+.tittle--h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 100;
+  color: $tittle;
+  font-family: "Open Sans";
+}
+
+.tittle--h3{
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: left;
+  font-weight: 600;
+  color: $tittle;
+  font-family: "Open Sans";
+  color: #fff;
+  margin-top: 0px;
+}
+
+.tittle--blue{
+  background-color: $btn-blue;
+  color: #fff;
+  padding: 15px 0px;
+  font-size: 28px;
 }

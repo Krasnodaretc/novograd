@@ -1,0 +1,15 @@
+.special{
+  & &__slider{
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+  &__title{
+    margin-bottom: 0px;
+  }
+  &__img{
+    height: 600px;
+    img{
+      max-width: 100%;
+    }
+  }
+}

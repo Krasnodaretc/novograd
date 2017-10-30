@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     concat = require("gulp-concat");
     autoprefixer = require('gulp-autoprefixer');
 
-gulp.task("default", ["sass-dev", "js", "html", "png"]);
+gulp.task("default", ["sass-dev", "js", "html", "png", "libscss"]);
 
 gulp.task("sass-dev", function () {
    gulp.src("./style/**/*.scss")
@@ -37,6 +37,13 @@ gulp.task("html", function () {
 gulp.task("png", function () {
    gulp.src("./public/img/**/*.png")
        .pipe(gulp.dest("./build/img/"))
+});
+
+gulp.task("libscss", function () {
+   gulp.src("./public/libs/normalize.css")
+       .pipe(cssnano())
+       .pipe(concat("libs.css"))
+       .pipe(gulp.dest("./build/css/"))
 });
 
 gulp.task('watch', function () {

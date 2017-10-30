@@ -1,0 +1,117 @@
+@import "const";
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: $footerbg;
+  padding: 40px 25px 50px;
+
+  &__logo{
+    margin-right: 8%;
+  }
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 4%;
+  }
+
+  &__order{
+    width: 310px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: $orderbg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    &:hover, &:active, &:focus{
+      color: #fff;
+    }
+  }
+}
+
+.place{
+  &__li{
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    list-style-type: none;
+    margin-bottom: 10px;
+
+    .place__title{
+      color: $border-blue;
+      margin-bottom: 3px;
+    }
+    .place__text{
+      font-size: 16px;
+    }
+    p{
+      margin: 0px;
+    }
+    &--header{
+      font-weight: 600;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $border-blue;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.sitemap{
+  &__li{
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    list-style-type: none;
+    margin-bottom: 3px;
+
+    &--header{
+      font-size: 18px;
+      font-weight: 600;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $border-blue;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.place, .sitemap{
+  padding-left: 0px;
+  width: 45%;
+}
+
+.order{
+  &__tittle{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
+  &__input{
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px 5px;
+  }
+
+  &__button{
+    width: 125px;
+    border-radius: 10px;
+    text-align: center;
+    color: #242424;
+    outline: none;
+    background-color: $gray;
+    padding: 5px 0px;
+    &:hover{
+      cursor: pointer;
+    }
+    &:hover, &:active, &:focus{
+      outline: none;
+    }
+  }
+}

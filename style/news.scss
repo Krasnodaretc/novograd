@@ -1,0 +1,42 @@
+@import "const";
+.news{
+  height:653px;
+  display: flex;
+  &__preview{
+    background: $btn-blue;
+    display: flex;
+    flex-direction: column;
+    padding: 115px 50px 90px 90px;
+    max-width: 600px;
+  }
+
+  &__text{
+    font-family: "Open Sans";
+    font-size: 30px;
+    color: #fff;
+  }
+
+  &__btn{
+    margin-top: auto;
+    align-self: center;
+    .btn__text{
+      color: #fff;
+    }
+  }
+
+  &__photo{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: $blue-light;
+  }
+  & &__tittle{
+    margin: 0px;
+    flex-shrink: 0;
+    background-color: $blue-light;
+  }
+
+  &__slider{
+    height: 100%;
+  }
+}
