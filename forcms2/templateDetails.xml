@@ -17,10 +17,10 @@
         <folder>js</folder>
         <folder>language</folder>
         <filename>index.html</filename>
+        <filename>index.php</filename>
         <filename>component.php</filename>
         <filename>error.php</filename>
         <filename>favicon.ico</filename>
-        <filename>index.php</filename>
         <filename>template_preview.png</filename>
         <filename>template_thumbnail.png</filename>
         <filename>templateDetails.xml</filename>

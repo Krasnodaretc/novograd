@@ -1,12 +1,15 @@
+<?php
+$doc = JFactory::getDocument();
+$doc->addStyleSheet(JUri::base().'templates/'.$doc->template.'/css/template.css');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Заголовок</title>
-    <link rel="stylesheet" href="css/libs.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+  	<jdoc:include type="head" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|PT+Sans+Narrow&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +17,7 @@
     <section class="header--fixed">
         <div class="header__container container">
             <div class="header__logo">
-                <img src="img/logos/head.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/logos/head.png" alt="">
             </div>
             <div class="header__menu menu">
                 <a class="menu__links">
@@ -45,7 +48,7 @@
                 </div>
                 <div class="contact__order">
                     <div class="contact__phone">
-                        <img src="img/action/phone.png" alt="">
+                        <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/action/phone.png" alt="">
                     </div>
                     <div class="contact__text">
                         Заказать звонок
@@ -61,7 +64,7 @@
 
     <section class="banners">
 
-        <div class="banners__banner banner" style="background-image: url('img/banners/1.png')">
+        <div class="banners__banner banner" style="background-image: url('<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/banners/3.png')">
             <div class="banner__overlay">
                 <div class="banner__title">
                     Апартаментный Комплекс
@@ -92,7 +95,7 @@
 
         </div>
 
-        <div class="banners__banner banner" style="background-image: url('img/banners/2.png')">
+        <div class="banners__banner banner" style="background-image: url('<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/banners/2.png')">
             <div class="banner__overlay">
                 <div class="banner__title">Апартаментный Комплекс
                     <div class="banner__name">
@@ -121,7 +124,7 @@
             </div>
         </div>
 
-        <div class="banners__banner banner" style="background-image: url('img/banners/3.png')">
+        <div class="banners__banner banner" style="background-image: url('<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/banners/1.png')">
             <div class="banner__overlay">
                 <div class="banner__title">
                     Жилой комплекс
@@ -163,63 +166,63 @@
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/locate.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/locate.png" alt="">
                 </div>
                 <div class="offer__text">Лучшая локация <br> объектов</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/home.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/home.png" alt="">
                 </div>
                 <div class="offer__text">Высокое качество монолитного строительства</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/cost.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/cost.png" alt="">
                 </div>
                 <div class="offer__text">Низкие цены</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/molot.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/molot.png" alt="">
                 </div>
                 <div class="offer__text">Работа по ФЗ-214</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/heart.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/heart.png" alt="">
                 </div>
                 <div class="offer__text">Благотворительность</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/tree.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/tree.png" alt="">
                 </div>
                 <div class="offer__text">Сохранение и восстановление ЭКО-зон</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/makers.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/makers.png" alt="">
                 </div>
                 <div class="offer__text">Стрим с 2007 года</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/plan.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/plan.png" alt="">
                 </div>
                 <div class="offer__text">Эргономичные планировки</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/fontan.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/fontan.png" alt="">
                 </div>
                 <div class="offer__text">Реконструкция общественных мест, парков</div>
             </div>
@@ -238,18 +241,18 @@
             Специальные предложения
         </h2>
         <div class="special__slider">
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
         </div>
     </section>
 
 
     <section class="advert">
         <div class="advert__img">
-            <img src="img/action/clas.png" alt="">
+            <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/action/clas.png" alt="">
         </div>
         <h2 class="advert__text tittle--h2">
             Мы предлагаем лучшие цены
@@ -297,16 +300,16 @@
         <div class="container partners__container">
 
             <div class="partners__img">
-                <img src="img/brands/leps.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/leps.png" alt="">
             </div>
             <div class="partners__img">
-                <img src="img/brands/zvezda.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/zvezda.png" alt="">
             </div>
             <div class="partners__img">
-                <img src="img/brands/volna.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/volna.png" alt="">
             </div>
             <div class="partners__img">
-                <img src="img/brands/sochi.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/sochi.png" alt="">
             </div>
 
         </div>
@@ -316,7 +319,7 @@
 
     <section class="info">
         <div class="info__logo">
-            <img src="img/logos/logo_info.png" alt="">
+            <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/logos/logo_info.png" alt="">
         </div>
         <div class="info__container container">
             <div class="info__text">
@@ -336,7 +339,7 @@
             </div>
             <div class="info__spoiler">
                 <div class="info__text--bold">
-                    <img src="img/action/star.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/action/star.png" alt="">
                     Награды и Достижения компании
                 </div>
                 <div class="btn news__btn btn--more">
@@ -358,7 +361,7 @@
 
 <footer class="footer">
     <div class="footer__logo">
-        <img src="img/logos/footer.png" alt="">
+        <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/logos/footer.png" alt="">
     </div>
 
     <div class="footer__info">
@@ -433,6 +436,6 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="js/main.js" defer></script>
+<script src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/js/main.js" defer></script>
 </body>
 </html>
