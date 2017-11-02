@@ -23,6 +23,9 @@
   &__contact{
     display: flex;
     flex-direction: column;
+    &:hover{
+      cursor: pointer;
+    }
   }
   &--fixed{
     width: 100%;
@@ -41,7 +44,9 @@
     margin: 5px;
     line-height: 1;
     transition: border-color 0.2s ease-in;
+    text-decoration: none;
     &:hover{
+      text-decoration: none;
       cursor: pointer;
       border-top-color: $border-blue;
       border-bottom-color: $border-blue;

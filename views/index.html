@@ -14,28 +14,28 @@
     <section class="header--fixed">
         <div class="header__container container">
             <div class="header__logo">
-                <img src="img/logos/head.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/logos/head.png" alt="">
             </div>
             <div class="header__menu menu">
-                <a class="menu__links">
+                <a class="menu__links" href="">
                     Главная
                 </a>
-                <a class="menu__links">
+                <a class="menu__links" href="">
                     О компании
                 </a>
-                <a class="menu__links">
+                <a class="menu__links" href="">
                     Объекты
                 </a>
-                <a class="menu__links">
+                <a class="menu__links" href="">
                     Документы
                 </a>
-                <a class="menu__links">
+                <a class="menu__links" href="">
                     Новости
                 </a>
-                <a class="menu__links">
+                <a class="menu__links" href="">
                     Акции
                 </a>
-                <a class="menu__links">
+                <a class="menu__links" href="">
                     Контакты
                 </a>
             </div>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="contact__order">
                     <div class="contact__phone">
-                        <img src="img/action/phone.png" alt="">
+                        <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/action/phone.png" alt="">
                     </div>
                     <div class="contact__text">
                         Заказать звонок
@@ -57,11 +57,28 @@
 </header>
 
 <main class="main">
+    <section class="modal">
+        <div class="modal__back">
+
+            <div class="modal__content">
+                <div class="order">
+                    <div class="order__tittle">Заказать звонок</div>
+                    <input type="text" placeholder="Ваше имя" class="order__input" name="name">
+                    <input type="text" placeholder="Ваш телефон" class="order__input" name="phone">
+                    <div class="order__button">Заказать</div>
+                    <div class="modal__close">
+                        Закрыть
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <section class="banners">
 
-        <div class="banners__banner banner" style="background-image: url('img/banners/1.png')">
+        <div class="banners__banner banner" style="background-image: url(<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/banners/1.png)">
             <div class="banner__overlay">
                 <div class="banner__title">
                     Апартаментный Комплекс
@@ -75,24 +92,24 @@
                     <p>Стоимость: от 100.000 руб./м2</p>
                 </div>
                 <div class="banner__buttons buttons">
-                    <div class="btn info__btn btn--goto">
+                    <a class="btn info__btn btn--goto">
                         <div class="btn__arrow--bottom btn__arrow"></div>
-                        <a class="btn__text">
+                        <div class="btn__text" href="">
                             Перейти на сайт
-                        </a>
-                    </div>
-                    <div class="btn info__btn btn--more">
+                        </div>
+                    </a>
+                    <a href="" class="btn info__btn btn--more">
                         <div class="btn__arrow--right btn__arrow"></div>
-                        <a class="btn__text">
+                        <div class="btn__text">
                             Подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
         </div>
 
-        <div class="banners__banner banner" style="background-image: url('img/banners/2.png')">
+        <div class="banners__banner banner" style="background-image: url(<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/banners/2.png)">
             <div class="banner__overlay">
                 <div class="banner__title">Апартаментный Комплекс
                     <div class="banner__name">
@@ -105,23 +122,23 @@
                     <p>Стоимость: от 100.000 руб./м2</p>
                 </div>
                 <div class="banner__buttons buttons">
-                    <div class="btn info__btn btn--goto">
+                    <a href="" class="btn info__btn btn--goto">
                         <div class="btn__arrow--bottom btn__arrow"></div>
-                        <a class="btn__text">
+                        <div class="btn__text">
                             Перейти на сайт
-                        </a>
-                    </div>
-                    <div class="btn info__btn btn--more">
+                        </div>
+                    </a>
+                    <a class="btn info__btn btn--more">
                         <div class="btn__arrow--right btn__arrow"></div>
-                        <a class="btn__text">
+                        <div class="btn__text">
                             Подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="banners__banner banner" style="background-image: url('img/banners/3.png')">
+        <div class="banners__banner banner" style="background-image: url(<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/banners/3.png)">
             <div class="banner__overlay">
                 <div class="banner__title">
                     Жилой комплекс
@@ -135,18 +152,18 @@
                     <p>Стоимость: от 100.000 руб./м2</p>
                 </div>
                 <div class="banner__buttons buttons">
-                    <div class="btn info__btn btn--goto">
+                    <a class="btn info__btn btn--goto">
                         <div class="btn__arrow--bottom btn__arrow"></div>
-                        <a class="btn__text">
+                        <div class="btn__text">
                             Перейти на сайт
-                        </a>
-                    </div>
-                    <div class="btn info__btn btn--more">
+                        </div>
+                    </a>
+                    <a class="btn info__btn btn--more">
                         <div class="btn__arrow--right btn__arrow"></div>
-                        <a class="btn__text">
+                        <div class="btn__text">
                             Подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -163,73 +180,73 @@
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/locate.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/locate.png" alt="">
                 </div>
                 <div class="offer__text">Лучшая локация <br> объектов</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/home.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/home.png" alt="">
                 </div>
                 <div class="offer__text">Высокое качество монолитного строительства</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/cost.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/cost.png" alt="">
                 </div>
                 <div class="offer__text">Низкие цены</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/molot.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/molot.png" alt="">
                 </div>
                 <div class="offer__text">Работа по ФЗ-214</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/heart.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/heart.png" alt="">
                 </div>
                 <div class="offer__text">Благотворительность</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/tree.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/tree.png" alt="">
                 </div>
                 <div class="offer__text">Сохранение и восстановление ЭКО-зон</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/makers.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/makers.png" alt="">
                 </div>
                 <div class="offer__text">Стрим с 2007 года</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/plan.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/plan.png" alt="">
                 </div>
                 <div class="offer__text">Эргономичные планировки</div>
             </div>
 
             <div class="advantages__offer offer">
                 <div class="offer__img">
-                    <img src="img/icons/fontan.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/icons/fontan.png" alt="">
                 </div>
                 <div class="offer__text">Реконструкция общественных мест, парков</div>
             </div>
 
         </div>
-        <div class="advantages__more btn btn--more">
+        <a href="#" class="advantages__more btn btn--more btn--oval">
             <div class="btn__text">
                 Подробнее
             </div>
-        </div>
+        </a>
     </section>
 
 
@@ -238,18 +255,18 @@
             Специальные предложения
         </h2>
         <div class="special__slider">
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
-            <div class="special__img"><img src="img/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
+            <div class="special__img"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/slider/test.png" alt=""></div>
         </div>
     </section>
 
 
     <section class="advert">
         <div class="advert__img">
-            <img src="img/action/clas.png" alt="">
+            <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/action/clas.png" alt="">
         </div>
         <h2 class="advert__text tittle--h2">
             Мы предлагаем лучшие цены
@@ -279,9 +296,15 @@
             </h2>
 
             <div class="news__slider">
-                <div class="news__img"><img src="" alt=""></div>
-                <div class="news__img"><img src="" alt=""></div>
-                <div class="news__img"><img src="" alt=""></div>
+                <div class="news__img">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/news/1.jpg?v=1.1" alt="">
+                </div>
+                <div class="news__img">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/news/2.jpg" alt="">
+                </div>
+                <div class="news__img">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/news/3.jpg" alt="">
+                </div>
             </div>
 
         </div>
@@ -297,16 +320,16 @@
         <div class="container partners__container">
 
             <div class="partners__img">
-                <img src="img/brands/leps.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/leps.png" alt="">
             </div>
             <div class="partners__img">
-                <img src="img/brands/zvezda.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/zvezda.png" alt="">
             </div>
             <div class="partners__img">
-                <img src="img/brands/volna.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/volna.png" alt="">
             </div>
             <div class="partners__img">
-                <img src="img/brands/sochi.png" alt="">
+                <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/brands/sochi.png" alt="">
             </div>
 
         </div>
@@ -316,7 +339,7 @@
 
     <section class="info">
         <div class="info__logo">
-            <img src="img/logos/logo_info.png" alt="">
+            <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/logos/logo_info.png" alt="">
         </div>
         <div class="info__container container">
             <div class="info__text">
@@ -336,7 +359,7 @@
             </div>
             <div class="info__spoiler">
                 <div class="info__text--bold">
-                    <img src="img/action/star.png" alt="">
+                    <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/action/star.png" alt="">
                     Награды и Достижения компании
                 </div>
                 <div class="btn news__btn btn--more">
@@ -358,7 +381,7 @@
 
 <footer class="footer">
     <div class="footer__logo">
-        <img src="img/logos/footer.png" alt="">
+        <img src="<?php echo JUri::base();?>templates/<?php echo $doc->template;?>/images/logos/footer.png" alt="">
     </div>
 
     <div class="footer__info">
@@ -422,8 +445,8 @@
 
     <div class="footer__order order">
         <div class="order__tittle">Заказать звонок</div>
-        <input type="text" placeholder="Ваше имя" class="order__input">
-        <input type="text" placeholder="Ваш телефон" class="order__input">
+        <input type="text" placeholder="Ваше имя" class="order__input" name="name">
+        <input type="text" placeholder="Ваш телефон" class="order__input" name="phone">
         <div class="order__button">Заказать</div>
     </div>
 

@@ -57,7 +57,10 @@
 
   &__buttons{
     padding-top: 80px;
-    .btn{
+    .btn, .btn:active,
+    .btn:focus, .btn:visited{
+      color: #fff;
+      text-decoration: none;
       margin-bottom: 12px;
     }
   }

@@ -17,14 +17,6 @@
   }
 
   &__order{
-    width: 310px;
-    height: 160px;
-    border-radius: 20px;
-    background-color: $orderbg;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
   a{
     text-decoration: none;
@@ -86,6 +78,14 @@
 }
 
 .order{
+  width: 310px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: $orderbg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   &__tittle{
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -97,6 +97,7 @@
     border-radius: 10px;
     text-align: center;
     padding: 3px 5px;
+    transition: border-color 0.2s ease-in, box-shadow 0.2s ease-in;
   }
 
   &__button{

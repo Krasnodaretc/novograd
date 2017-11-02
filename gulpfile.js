@@ -35,7 +35,7 @@ gulp.task("html", function () {
 
 
 gulp.task("png", function () {
-   gulp.src("./public/img/**/*.png")
+   gulp.src(["./public/img/**/*.png", "./public/img/**/*.jpg"])
        .pipe(gulp.dest("./build/img/"))
 });
 
